@@ -11,15 +11,15 @@ Intro
             “Everyone has the right to freedom of opinion and expression; this
             right includes freedom to hold opinions without interference and to
             seek, receive and impart information and ideas through any media
-            and regardless of frontiers.” We must also what internet censorship
+            and regardless of frontiers.” We must also know what internet censorship
             actually is and what it entails. To most people internet censorship
-            is just known as the blocking of websites or the control of
-            explicit content, its only use is to protect children from the
+            is just known as the blocking of websites, or the control of
+            explicit content. Its only use is to protect children from the
             adult content that is out there. Nevertheless the extent to
             internet censorship extends much further than this. According to
             the Oxford dictionary censorship is “The suppression or prohibition
             of any parts of books, films, news, etc. that are considered
-            obscene, politically unacceptable, or a threat to security.” In
+            obscene, politically unacceptable, or a threat to security”. In
             terms of it being online however it is said to be restrictions
             placed on what information can be publicized or viewed on the
             internet (What is Internet Censorship?, 2017). This could be
@@ -33,9 +33,9 @@ Intro
             computer what is censored will vary.
 
             There are many different types of internet censorship and as the
-            internet is continuously growing and developing more types are
+            internet is continuously growing and developing, more types are
             being implemented every day. I shall discuss the main few types,
-            starting with IP Blocking, this is when an IP address is blocked
+            starting with IP Blocking, This is when an IP address is blocked
             from being accessed (Quick Guide To Internet Censorship,
             2017). This means that if the website being targeted is in a shared
             hosting server, all the websites on that server will be blocked and
@@ -44,10 +44,10 @@ Intro
             Guide To Internet Censorship, 2017), so do not give the IP address
             of the website being accessed, therefore meaning the user cannot
             connect to it, or alternatively a false IP address will be returned
-            once again meaning that the website cannot be accessed or they will
+            once again meaning that the website cannot be accessed, or they will
             be sent to a different site. Uniform Resource Locator Filtering is
             another type of online censorship that scans the URL that has been
-            input for target keywords regardless to the desired domain name
+            input for target keywords, regardless to the desired domain name
             specified (Quick Guide To Internet Censorship, 2017). There is also
             packet filtering which will terminate TCP packet transmissions when
             a certain number of keywords are detected within (Quick Guide To
@@ -64,7 +64,7 @@ Intro
             that citizens are not allowed to receive information and therefore
             could be seen as breeching article 19.
 
-            One well known case of real life internet censorship in china is
+            One well known case of real life internet censorship in China is
             the censorship around the Tiananmen Square Massacre in 1989. An
             unknown number of Chinese citizens were gunned down for protesting
             the advance of the military in the capital. What is controversial
@@ -78,9 +78,9 @@ Intro
             were unable to post commemoration posts or even educational
             accounts of what happened to make younger generations aware of the
             rebellions. This in turn suggests that these accounts are being
-            almost covered up and erasing the prodemocracy protest from
+            almost covered up and erasing the pro-democracy protest from
             history. To me this implies that citizens are not allowed to impart
-            information without interference as this is blatant interference as
+            information without interference, as this is blatant interference because
             the users are not allowed to speak freely. Therefore, I think this
             instance does in fact violate article 19 and as there are multiple
             more instances of similar censorship a lot of information is barred
@@ -89,23 +89,26 @@ Intro
             In contrast to this there are signs that the tight control and
             constraints are becoming more relaxed. Along with topics to do with
             consumerism, sexuality and death even some political words which
-            were once censored are not anymore. An instance of this is how in
-            2009 Chinese media was allowed to report on the fifty years of
-            control, or democratic reform as some referred to it as, over
-            Tibet, whereas previous to this had not been allowed (Ying,
-            2017). This allowed for some sort of recognition of the events of
-            this important day in history. It has even got to the point where
-            anti-corruption sites have been set up and expose the wrong doings
-            of officials. For example the China Public Opinion Watching
-            Website, in 2003, revealed the corruption of the Deputy Mayor of Ji
-            Ning city in Shan Dong province and this then resulted in the
-            Deputy Mayor being arrested (Ying, 2017). This therefore elucidates
-            the impression that the government is slackening its restrictions
-            on what people can and can’t post or search for on the internet. To
-            me this shows that more freedom is being given to talk about
-            sensitive topics and implies that steps are being taken to reduce
-            censorship and therefore steps are being taken to stop the
-            violation of Article 19.
+            were once censored are not anymore.
+
+Restructure: An instance of this is how in 2009 Chinese media was allowed to
+            report on the fifty years of control, or democratic reform as some
+            referred to it as, over Tibet, whereas previous to this had not
+            been allowed (Ying, 2017).
+
+This allowed for some sort of recognition of the events of this important day
+            in history. It has even got to the point where anti-corruption
+            sites have been set up and expose the wrong doings of
+            officials. For example the China Public Opinion Watching Website,
+            in 2003, revealed the corruption of the Deputy Mayor of Ji Ning
+            city in Shan Dong province and this then resulted in the Deputy
+            Mayor being arrested (Ying, 2017). This therefore elucidates the
+            impression that the government is slackening its restrictions on
+            what people can and can’t post or search for on the internet. To me
+            this shows that more freedom is being given to talk about sensitive
+            topics and implies that steps are being taken to reduce censorship
+            and therefore steps are being taken to stop the violation of
+            Article 19.
 
             One way the Chinese government tries to reduce the amount of
             censoring they have to do themselves is to encourage
