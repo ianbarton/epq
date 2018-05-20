@@ -1,73 +1,87 @@
 To what extent does internet censorship In China violate Article 19 of The Universal Declaration of Humans Rights?
 
-;;; Stefan Monnier <foo at acm.org>. It is the opposite of fill-paragraph
-    (defun unfill-paragraph (&optional region)
-      "Takes a multi-line paragraph and makes it into a single line of text."
-      (interactive (progn (barf-if-buffer-read-only) '(t)))
-      (let ((fill-column (point-max))
-            ;; This would override `fill-column' if it's an integer.
-            (emacs-lisp-docstring-fill-column t))
-        (fill-paragraph nil region)))
 
-To what extent does internet censorship In China violate Article 19 of The Universal Declaration of Humans Rights?
-
-
-
-Intro
-
-
+In this essay I aim to answer the question ‘To what extent does internet
+censorship in China violate article 19 of The Universal Declaration of Human
+Rights?’. I am going to show a balanced view point taking into consideration
+arguments from different points of view, people saying it does violate and
+others saying it doesn’t. I will also compare and evaluate if these points are
+valid and what I personally believe about them.  To start my investigation I am
+going to provide and explain some basic definitions surrounding the question. I
+also am going to state what has been rumoured to happen and the extent of the
+censorship and whether or not this violates the article. I will also back this
+up with a real-life case of how it is implemented and the control surrounding
+this. I am then going to offer a counter argument of how as time goes on there
+is less and less being done by the government to control the internet.  To
+follow this I am going to explain the culture of self-censorship and how it may
+be the people themselves imposing it and therefore not the government. I am
+then going to extend this and discuss the citizens that do not censor and find
+ways around it and the possible consequences for this. I shall then go on to
+detail how the social differences between China and the rest of the world can
+be used to defend the implementation of censorship. To further the defence I am
+going to find and evaluate the justification given by the Chinese government
+itself and see their stand point, more counter points will be provided to
+this. I am then going to return to the differences between cultures debating
+whether it has actually been beneficial to the country on a whole as a way to
+unite it. I will also briefly talk about how some think the censorship has not
+hindered citizens but has partially aided it. Then I shall briefly compare the
+censorship in China to that in England. Finally, to conclude I will weigh up
+each argument and point and hopefully come to an unbiased standpoint to the
+extent the censorship violates article 19. I intend to use a variety of sources
+including online journals, websites and books to get varied but valid opinions
+and points of view. I am also going to include information from people who have
+to live with the censorship as well as people who live in different countries
+as they will have a different understanding. This is all to assist in keeping
+arguments and points of view balanced.
 
 To fully be able to answer this question we must know that article 19 of The
-Universal Declaration of Human Rights states that "Everyone has the right to
+Universal Declaration of Human Rights states that “Everyone has the right to
 freedom of opinion and expression; this right includes freedom to hold opinions
 without interference and to seek, receive and impart information and ideas
-through any media and regardless of frontiers." We must also know what internet
+through any media and regardless of frontiers.” We must also know what internet
 censorship actually is and what it entails. To most people internet censorship
 is just known as the blocking of websites or the control of explicit content,
 its only use is to protect children from the adult content that is out
 there. Nevertheless the extent to internet censorship extends much further than
-this. According to the Oxford dictionary censorship is "The suppression or
+this. According to the Oxford dictionary censorship is “The suppression or
 prohibition of any parts of books, films, news, etc. that are considered
-obscene, politically unacceptable, or a threat to security." In terms of it
+obscene, politically unacceptable, or a threat to security.” In terms of it
 being online however it is said to be restrictions placed on what information
-can be publicized or viewed on the internet (What is Internet Censorship?,
-2017). This could be anything from blocking access to copyrighted information,
-harmful or sensitive content or even the blocking of certain political or
-religious views that are being expressed. Internet censorship can also help
-monitor and control crime that is carried out through the help of the internet
-by filtering websites if malicious software or viruses are detected, though
-this is often on a more singular basis rather than on mass. Yet from country to
-country, computer to computer what is censored will vary.
+can be publicized or viewed on the internet[ CITATION Wha17 \l 2057 ]. This
+could be anything from blocking access to copyrighted information, harmful or
+sensitive content or even the blocking of certain political or religious views
+that are being expressed. Internet censorship can also help monitor and control
+crime that is carried out through the help of the internet by filtering
+websites if malicious software or viruses are detected, though this is often on
+a more singular basis rather than on mass. Yet from country to country,
+computer to computer what is censored will vary.  There are many different
+types of internet censorship and as the internet is continuously growing and
+developing more types are being implemented every day. I shall discuss the main
+few types, starting with IP Blocking, this is when an IP address is blocked
+from being accessed[ CITATION QUI17 \l 2057 ]. This means that if the website
+being targeted is in a shared hosting server, all the websites on that server
+will be blocked and therefore cannot be viewed. There is also DNS Filtering and
+Redirection which is when domain names are not resolved [CITATION QUI17 \l 2057
+], so do not give the IP address of the website being accessed, therefore
+meaning the user cannot connect to it, or alternatively a false IP address will
+be returned once again meaning that the website cannot be accessed or they will
+be sent to a different site. Uniform Resource Locator Filtering is another type
+of online censorship that scans the URL that has been input for target keywords
+regardless of the desired domain name specified[ CITATION QUI17 \l 2057
+]. There is also packet filtering which will terminate TCP packet transmissions
+when a certain number of keywords are detected within[ CITATION QUI17 \l 2057
+]. This means that the person searching this information will not receive the
+packets and therefore will not receive the data. The final type of censorship I
+am going to mention is connection resets. This is a form used quite
+aggressively in the Great Firewall which resets the connections of web
+requests, which doesn’t allow the user to access the site, and it can then
+block all traffic to the site for a set period of time. All of these methods
+are rumoured to be used as part of The Great Firewall to try and stop and
+control Chinese citizens from accessing certain information[ CITATION Hof16 \l
+2057 ]. This could imply that citizens are not allowed to receive information
+and therefore could be seen as breeching article 19.
 
-There are many different types of internet censorship and as the internet is
-continuously growing and developing more types are being implemented every
-day. I shall discuss the main few types, starting with IP Blocking, this is
-when an IP address is blocked from being accessed (Quick Guide To Internet
-Censorship, 2017). This means that if the website being targeted is in a shared
-hosting server, all the websites on that server will be blocked and therefore
-cannot be viewed. There is also DNS Filtering and Redirection which is when
-domain names are not resolved (Quick Guide To Internet Censorship, 2017), so do
-not give the IP address of the website being accessed, therefore meaning the
-user cannot connect to it, or alternatively a false IP address will be returned
-once again meaning that the website cannot be accessed or they will be sent to
-a different site. Uniform Resource Locator Filtering is another type of online
-censorship that scans the URL that has been input for target keywords
-regardless of the desired domain name specified (Quick Guide To Internet
-Censorship, 2017). There is also packet filtering which will terminate TCP
-packet transmissions when a certain number of keywords are detected within
-(Quick Guide To Internet Censorship, 2017). This means that the person
-searching this information will not receive the packets and therefore will not
-receive the data. The final type of censorship I am going to mention is
-connection resets. This is a form used quite aggressively in the Great Firewall
-which resets the connections of web requests, which doesn't allow the user to
-access the site, and it can then block all traffic to the site for a set period
-of time. All of these methods are rumoured to be used as part of The Great
-Firewall to try and stop and control Chinese citizens from accessing certain
-information (Hoffman, 2016). This could imply that citizens are not allowed to
-receive information and therefore could be seen as breeching article 19.
-
-
-One well known case of real life internet censorship in China is the censorship
+One well known case of real life internet censorship in china is the censorship
 around the Tiananmen Square Massacre in 1989. An unknown number of Chinese
 citizens were gunned down for protesting the advance of the military in the
 capital. What is controversial about this is how on the anniversary of the
@@ -75,15 +89,15 @@ event each year, words linked to the events are blocked. This is a form of
 packet filtering as it detects certain keywords or code words and will not
 allow the user to search for these. On Weibo, a popular Chinese social media
 sight, it is reported that 118 terms linked to the Tiananmen square massacre
-were blocked around the time of its anniversary in 2012 (Henochowicz,
-2013). This meant that citizens were unable to post commemoration posts or even
+were blocked around the time of its anniversary in 2012[ CITATION Ann13 \l 2057
+]. This meant that citizens were unable to post commemoration posts or even
 educational accounts of what happened to make younger generations aware of the
 rebellions. This in turn suggests that these accounts are being almost covered
 up and erasing the prodemocracy protest from history. To me this implies that
 citizens are not allowed to impart information without interference as this is
 blatant interference because the users are not allowed to speak
 freely. Therefore, I think this instance does in fact violate article 19 and as
-there are multiple more instances of similar censorship ti seems a lot of
+there are multiple more instances of similar censorship it seems a lot of
 information is barred from the public in this way.
 
 In contrast to this there are signs that the tight control and constraints are
@@ -91,80 +105,49 @@ becoming more relaxed. Along with topics to do with consumerism, sexuality and
 death even some political words which were once censored are not anymore. An
 instance of this is how in 2009 Chinese media was allowed to report on the
 fifty years of control, or democratic reform as some referred to it as, over
-Tibet, whereas previous to this it had not been allowed (Ying, 2017). This
-allowed for some sort of recognition of the events on this important day in
-history. It has even got to the point where anti-corruption sites have been set
-up and expose the wrong doings of officials. For example the China Public
-Opinion Watching Website, in 2003, revealed the corruption of the Deputy Mayor
-of Ji Ning city in Shan Dong province and this then resulted in the Deputy
-Mayor being arrested (Ying, 2017). This therefore elucidates the impression
-that the government is slackening its restrictions on what people can and can't
-post or search for on the internet. To me this shows that more freedom is being
-given to talk about sensitive topics and implies that steps are being taken to
-reduce censorship and therefore steps are being taken to stop the violation of
-Article 19.
-
-One way the Chinese government tries to reduce the amount of censoring they
-have to do themselves is to encourage self-censorship. They promote a culture
-of citizens censoring themselves, so by making individuals think that if they
-violate what the government thinks shouldn't be posted that they will be caught
-and there will be consequences. This means that people feel that they have to
-watch what they say and then hesitate what to post online and often don't
-because they know there could be ramifications. One small method that this is
-encouraged by is by giving out self-discipline awards at an award ceremony
-hosted by the Internet Society of China for Internet Firms, and although this
-is a nongovernmental organisation it is supported by government
-authorities. Allegedly companies are given an award for censoring within their
-companies and for not allowing any taboo information to be on their systems
-(RAND Corporation, 2013).  This along with the fact that the Chinese government
-mandates that companies be responsible for their public content shifts the
-responsibility from the government to companies themselves (Punyakumpol,
-2011). This then means that the companies are the ones doing the censoring
-themselves instead of the government so it could be argued that this does not
-violate article 19 as they still can seek, receive and impart information they
-just choose not to. They would still have the freedom to post these things if
-they so wanted to. However I feel this coercion from the government and other
-regulation authorities is putting pressure on people and I would class this as
-a type of interference as it is almost a subtle threat that if you don't censor
-yourself there could be punishment. Additionally for there then to be rewards
-for it once it is done I feel this could be seen as bribery and does show how
-the government is bias towards censorship, and as censorship is proven to
-violate Article 19 I feel the culture of self-censorship also indirectly
-violates it.
-
-One argument that many people use to defend censorship is that as china is such
-a large and diverse country that censorship is needed to prevent mayhem and
-help provide stability to the country. Multiple Chinese news websites pledged
-that they would self-censor as it would help to "maintain social stability, and
-promote the building of a socialist harmonious society" (Hua, 2006). Another
-citizen has said that "Trying to make over 50 ethnic groups into a cohesive
-whole is a problem unique to china and requires unique measures that may seem
-unpalatable to outsiders" (RAND Corporation, 2013). This shows another
-perspective which makes it seem like extra precautions are necessary in china
-to prevent social disorder. It does pose the question that is it more important
-for people to be able to use social media or to keep a stable society. However
-I feel that some of the censorship that is imposed is more serious than just
-that and that citizens should be allowed to freely comment and educate
-others. Yet it does highlight a serious point where maybe censorship is
-necessary to China whereas it might not be to other countries. The sheer scale
-and population of the country does make me tend towards thinking that some sort
-of control must be needed even if it was to just stop the spread of hate speech
-or stop the promotion of terrorism, as I feel protecting citizens is
-imperative. And although I do agree with this to a certain extent I still feel
-that as it states in article 19 that everyone has the right to information
-"regardless of frontiers" it shouldn't matter that china is a separate country,
-this applies to every country and every human. Therefore I feel this argument
-is invalid as it applies regardless of borders. I also feel that because it is
-such a large and diverse population that this means that peoples voices may
-need to be heard even more as there could potentially be problems within
-societies that need to be resolved, and won't be because censorship doesn't
-allow for people to talk about them.
-
-Many Chinese citizens decide that they don't want to live with the censorship
-and so find circumvention methods to get around it. Many use programs such as
-UltraSurf which uses HTTP Proxy servers and encryption protocols for privacy
-(UltraSurf, 2018). This allows users to bypass the firewall while protecting
-all of the data that is transferred from third parties. Another popular way to
+Tibet, whereas previous to this it had not been allowed[ CITATION Jia17 \l 2057
+]. This allowed for some sort of recognition of the events on this important
+day in history. It has even got to the point where anti-corruption sites have
+been set up and expose the wrong doings of officials. For example the China
+Public Opinion Watching Website, in 2003, revealed the corruption of the Deputy
+Mayor of Ji Ning city in Shan Dong province and this then resulted in the
+Deputy Mayor being arrested[ CITATION Jia17 \l 2057 ]. This therefore
+elucidates the impression that the government is slackening its restrictions on
+what people can and can’t post or search for on the internet. To me this shows
+that more freedom is being given to talk about sensitive topics and implies
+that steps are being taken to reduce censorship and therefore steps are being
+taken to stop the violation of Article 19.  One way the Chinese government
+tries to reduce the amount of censoring they have to do themselves is to
+encourage self-censorship. They promote a culture of citizens censoring
+themselves, so by making individuals think that if they violate what the
+government thinks shouldn’t be posted that they will be caught and there will
+be consequences. This means that people feel that they have to watch what they
+say and then hesitate what to post online and often don’t because they know
+there could be ramifications. One small method that this is encouraged by is by
+giving out self-discipline awards at an award ceremony hosted by the Internet
+Society of China for Internet Firms, and although this is a nongovernmental
+organisation it is supported by government authorities. Allegedly companies are
+given an award for censoring within their companies and for not allowing any
+taboo information to be on their systems[ CITATION RAN17 \l 2057 ].  This along
+with the fact that the Chinese government mandates that companies be
+responsible for their public content shifts the responsibility from the
+government to companies themselves [CITATION The17 \l 2057 ]. This then means
+that the companies are the ones doing the censoring themselves instead of the
+government so it could be argued that this does not violate article 19 as they
+still can seek, receive and impart information they just choose not to. They
+would still have the freedom to post these things if they so wanted to. However
+I feel this coercion from the government and other regulation authorities is
+putting pressure on people and I would class this as a type of interference as
+it is almost a subtle threat that if you don’t censor yourself there could be
+punishment. Additionally for there then to be rewards for it once it is done I
+feel this could be seen as bribery and does show how the government is bias
+towards censorship, and as censorship is proven to violate Article 19 I feel
+the culture of self-censorship also indirectly violates it.  Many Chinese
+citizens decide that they don’t want to live with the censorship and so find
+circumvention methods to get around it. Many use programs such as UltraSurf
+which uses HTTP Proxy servers and encryption protocols for privacy[ CITATION
+Ult18 \l 2057 ]. This allows users to bypass the firewall while protecting all
+of the data that is transferred from third parties. Another popular way to
 circumvent blocking is to connect to a VPN(Virtual Private Network), this works
 by making the users IP address appear to be that of the VPNs, so it basically
 tricks the system into thinking you are somewhere you are not. This means you
@@ -176,103 +159,233 @@ was not accustomed to. Unfortunately though as soon as these sites and methods
 are created they are shut down and stopped by authorities so there is
 constantly the creation of more and more ways of circumventing the
 censorship. Along with this many internet users use code words to communicate
-that won't be detected by censors however once these are discovered they are
-added to a list of sensitive words which are blocked (RAND Corporation,
-2013). This shows the willingness of many thousands of Chinese citizens which
-don't want to be censored and do not agree with what is being done to
-them. This does show that no matter what people will always find a way to voice
-their opinions and speak freely. Arguably it could also show how censorship in
-China does not violate article 19 as people still find ways to seek, receive
-and impart information regardless.
+that won’t be detected by censors however once these are discovered they are
+added to a list of sensitive words which are blocked[ CITATION RAN17 \l 2057
+]. This shows the willingness of many thousands of Chinese citizens which don’t
+want to be censored and do not agree with what is being done to them. This does
+show that no matter what people will always find a way to voice their opinions
+and speak freely. Arguably it could also show how censorship in China does not
+violate article 19 as people still find ways to seek, receive and impart
+information regardless.  However there are serious ramifications for people
+that are found using circumvention methods. Although China has not officially
+put out a statement regarding the legality of circumventing their censorship I
+am going to explain examples of precedent of China’s authority’s response to
+circumvention. One case is in 2017 when a man, Deng Jiewei, was sentenced to
+nine months in jail for selling access to a VPN in GuangDong province. Jiewei
+was convicted of “providing software and tools for invading and illegally
+controlling the computer information system”[ CITATION Nec17 \l 2057 ]. This
+further dissuades people from finding methods to openly voice their opinions
+and view sites that the rest of the world has access to. This also shows that
+even though the government at large is fairly vague on what is and is not
+illegal, as many companies use VPNs for different reasons internally, that
+there is a possibility depending on the area, that citizens could be
+punished. This in itself will discourage people from trying to circumvent the
+censorship, which can be seen as interference and so would violate
+article 19. You could also reason that a citizen should not have to go to the
+extent to doing something potentially illegal and punishable just so that they
+can use the internet freely.  Regardless it is still arguable that because
+citizens have the opportunity to bypass these restrictions and be able to post
+whatever they want online. Even Bill Gates, principle founder of Microsoft
+Corporation has said that “The Chinese efforts to censor the Internet have been
+very limited. It’s easy to go around it…”[ CITATION Dav10 \l 2057 ]. This
+comment shows how one of the greatest software architects disregards the
+censorship and makes it appear insignificant. This confounds the point that the
+censorship does not limit people and therefore does not interfere with their
+freedom of opinion and expression and so does not violate article 19. This does
+not take into account all of the people who are not technologically inclined
+and would not know that circumvention is possible never mind knowing how to
+actually do it.
 
-However there are serious ramifications for people that are found using
-circumvention methods. Although China has not officially put out a statement
-regarding the legality of circumventing their censorship I am going to explain
-examples of precedent of China's authority's response to circumvention. One
-case is in 2017 when a man, Deng Jiewei, was sentenced to nine months in jail
-for selling access to a VPN in GuangDong province. Jiewei was convicted of
-"providing software and tools for invading and illegally controlling the
-computer information system" (Gan, 2017). This further dissuades people from
-finding methods to openly voice their opinions and view sites that the rest of
-the world has access to. This also shows that even though the government at
-large is fairly vague on what is and is not illegal, as many companies use VPNs
-for different reasons internally, that there is a possibility depending on the
-area, that citizens could be punished. This in itself will discourage people
-from trying to circumvent the censorship, which can be seen as interference and
-so would violate article 19. You could also reason that a citizen should not
-have to go to the extent to doing something potentially illegal and punishable
-just so that they can use the internet freely.
-
-Regardless it is still arguable that because citizens have the opportunity to
-bypass these restrictions and be able to post whatever they want online. Even
-Bill Gates, principle founder of Microsoft Corporation has said that "The
-Chinese efforts to censor the Internet have been very limited. It's easy to go
-around it..."  (Morgan, 2010). This comment shows how one of the greatest
-software architects disregards the censorship and makes it appear
-insignificant. This confounds the point that the censorship does not limit
-people and therefore does not interfere with their freedom of opinion and
-expression and so does not violate article 19. This does not take into account
-all of the people who are not technologically inclined and would not know that
-circumvention is possible never mind knowing how to actually do it.
-
-In June of 2010, China released a White Paper detailing how they justify the
+One argument that many people use to defend censorship is that as china is such
+a large and diverse country that censorship is needed to prevent mayhem and
+help provide stability to the country. Multiple Chinese news websites pledged
+that they would self-censor as it would help to “maintain social stability, and
+promote the building of a socialist harmonious society” [ CITATION Xin06 \l
+2057 ]. Another citizen has said that “Trying to make over 50 ethnic groups
+into a cohesive whole is a problem unique to china and requires unique measures
+that may seem unpalatable to outsiders” [ CITATION RAN17 \l 2057 ]. This shows
+another perspective which makes it seem like extra precautions are necessary in
+china to prevent social disorder. It does pose the question that is it more
+important for people to be able to use social media or to keep a stable
+society. However I feel that some of the censorship that is imposed is more
+serious than just that and that citizens should be allowed to freely comment
+and educate others. Yet it does highlight a serious point where maybe
+censorship is necessary to China whereas it might not be to other
+countries. The sheer scale and population of the country does make me tend
+towards thinking that some sort of control must be needed even if it was to
+just stop the spread of hate speech or stop the promotion of terrorism, as I
+feel protecting citizens is imperative. And although I do agree with this to a
+certain extent I still feel that as it states in article 19 that everyone has
+the right to information “regardless of frontiers” it shouldn’t matter that
+china is a separate country, this applies to every country and every
+human. Therefore I feel this argument is invalid as it applies regardless of
+borders. I also feel that because it is such a large and diverse population
+that this means that peoples voices may need to be heard even more as there
+could potentially be problems within societies that need to be resolved, and
+won’t be because censorship doesn’t allow for people to talk about them.  In
+June of 2010, China released a White Paper detailing how they justify the
 censorship in their country. Along with the some of the arguments I have
 previously discussed, like how it stops information that could undermine the
 state and its power from being published, it also documented a slightly
-different view. It stated that "Within Chinese territory the internet is under
+different view. It stated that “Within Chinese territory the internet is under
 the jurisdiction of Chinese sovereignty. The internet sovereignty of China
-should be respected and protected" (Bristow, 2010) which I feel is trying to
-put across the point that the country of China has its own laws and if the
-internet is to be used in its country then it should follow the laws and
+should be respected and protected”[ CITATION Mic10 \l 2057 ] which I feel is
+trying to put across the point that the country of China has its own laws and
+if the internet is to be used in its country then it should follow the laws and
 regulations which the country has set out. I feel this is a fair point as all
-countries have laws that govern the actions of people so why shouldn't there
+countries have laws that govern the actions of people so why shouldn’t there
 also be laws and restrictions on the internet as this would help stop illegal
 activities from happening. It could also help keep order and increase the
 security of the space.
 
-Another thing that was insisted upon was the fact that "Chinese citizens fully
-enjoy freedom of speech on the internet" (Bristow, 2010), this alludes that the
-Chinese government is fully aware of the criticisms of its system but it
-disregards them, as in their opinion the censorship does not limit people's
-freedom on the internet. This therefore implies that from their point of view
-they are not violating article 19 as they insinuate that people have freedom of
-expression.
+Another thing that was insisted upon was the fact that “Chinese citizens fully
+enjoy freedom of speech on the internet”[ CITATION Mic10 \l 2057 ], this
+alludes that the Chinese government is fully aware of the criticisms of its
+system but it disregards them, as in their opinion the censorship does not
+limit people’s freedom on the internet. This therefore implies that from their
+point of view they are not violating article 19 as they insinuate that people
+have freedom of expression.  As I have previously mentioned one of the reasons
+China attempts to control information on the internet is to try and maintain
+social and political stability within the country. However it has been
+suggested that censorship does not just maintain but actually effects and
+almost tries to silence any alternate views to what the government agrees
+with. This was shown in late 2017 when it came close to the 19th party
+congress, a meeting of the Communist Party of China. Allegedly in the lead up
+to it the censoring was increased and cultural diffusion was regulated more
+heavily than normal. This meant that lots of media including foreign films and
+television shows were said to have been removed from pages and streaming
+applications. Social media was also apparently more heavily monitored with any
+comments or posts relating to the party congress or political matters [
+CITATION Qin17 \l 2057 ]. I feel like this does contradict article 19 as it
+does stop people from being able to share their opinions on the party. This
+means that all the healthy conversations and debating about different
+advantages and disadvantages to political parties or leaders is very important
+as it helps educate the public with information that they need to be able to
+form judgments. I also feel that they have the right to the information about
+who is in control of their country and what decisions they could possibly make
+about the place you live in. Even though this may help to prevent rebellions
+and calm tensions within the country I honestly believe that this does not
+justify the online silencing of people, who obviously have important and
+relevant things to say on these issues.  An alternate issue when discussing
+internet censorship in China is that when it is discussed people often forget
+the significant cultural differences between where they live and China. Here in
+England, censorship is generally seen as limiting and supressing the freedom of
+the people under it. Whereas in China it has been suggested that citizens
+interpret it differently, that they believe that it is almost a tradition as
+there has been alternate types of censorship, not on the internet, since 1949[
+CITATION Uni12 \l 2057 ].  This means that the culture there has developed
+around the censorship and that many of the people in China will therefore
+believe that it is a necessary core part of the internet and they would then
+therefore agree that they need it. As a result this could then be interpreted
+that they almost encourage the censorship as it protects them and keep them
+safe. This could then be debated as a reason for censorship as the majority of
+the people affected by it in some form condone it, which could be turned to say
+that it therefore does not impose on their freedom of opinion as they are in
+favour of it.
 
-As I have previously mentioned one of the reasons China attempts to control
-information on the internet is to try and maintain social and political
-stability within the country. However it has been suggested that censorship
-does not just maintain but actually effects and almost tries to silence any
-alternate views to what the government agrees with. This was shown in late 2017
-when it came close to the 19th party congress, a meeting of the Communist Party
-of China. Allegedly in the lead up to it the censoring was increased and
-cultural diffusion was regulated more heavily than normal. This meant that lots
-of media including foreign films and television shows were said to have been
-removed from pages and streaming applications. Social media was also apparently
-more heavily monitored with any comments or posts relating to the party
-congress or political matters (Li, 2017). I feel like this does contradict
-article 19 as it does stop people from being able to share their opinions on
-the party. This means that all the healthy conversations and debating about
-different advantages and disadvantages to political parties or leaders is very
-important as it helps educate the public with information that they need to be
-able to form judgments. I also feel that they have the right to the information
-about who is in control of their country and what decisions they could possibly
-make about the place you live in. Even though this may help to prevent
-rebellions and calm tensions within the country I honestly believe that this
-does not justify the online silencing of people, who obviously have important
-and relevant things to say on these issues.
+To further this point the book ‘The Power Of The Internet In China’ actually
+debates whether the internet in China has actually allowed for more activism
+than if there was no internet at all. It argues that all of the things that
+citizens can now do such as “Web campaigns, signature petitions, outright
+verbal protests, and online direct action such as virtual sit-ins and
+hacktivism”[ CITATION Guo \l 2057 ] have in the long run actually aided the
+fight for more freedom of speech in china and that even though the internet is
+restricted it has helped loosen the restrictions put down by the
+government. The book then goes on to detail how all of the things created and
+aided by the internet are phenomenal and how censorship has only meant that
+users found even more creative ways to subvert it. This shows that the people
+that live with the censorship actually think in a way it has been beneficial to
+them and that it hasn’t interfered too much with their freedom of speech just
+made them think and find different ways to express it.  It may be useful to
+think about the censorship in China contextually in the world. This will allow
+you to see the extent of the censorship in comparison to what is typical. To do
+this I am going to state the censorship that is here in the United Kingdom. It
+is hard to categorically say what exactly is censored in the UK, as obviously
+it is not accessible however as it is unavailable. At the time of writing this
+essay (17/05/18) according to the website ‘Blocked’ out of 22,254,612 websites
+tested 656,006 of these sites are blocked in the UK by companies such as
+BT-Strict, TalkTalk, BT, O2, EE, Sky, Three and VirginMedia [ CITATION Blo18 \l
+2057 ]. These companies block either by opt-in or default filtering that aims
+to block harmful content from children such as drugs, alcohol, file sharing,
+gambling, pornography, nudity, social networking, suicide and self-harm,
+weapons and violence, obscenity, criminal Skills, hacking and web-blocking
+circumvention tools[ CITATION Nic13 \l 2057 ]. Some of this is understandable
+and justifiable as it would help protect young children from disturbing content
+which they could accidentally access. However it has been reported that there
+is over blocking happening. This is when websites which are not harmful are
+being blocked unnecessarily and sometimes without reason. Some of this could be
+accidental such as blocking of sex education sites which could have been
+mistaken for something else. Yet it seems that sites have been filtered which
+do not fit any of the categories listed above and would not be seen as harmful
+such as a feminist’s rights blog [ CITATION Jos14 \l 2057 ] and a Youtube video
+filmed by a trucker in Calais that shows refugees desperately trying to sneak
+on-board trucks [ CITATION Dav18 \l 2057 ]. As neither of these things break
+the law, or would possibly be thought of as breaking the law, this leads me to
+believe that some of the censorship could be political. This filtering blocks
+people from being able to share their opinions and factual evidence of what is
+actually happening. This then leads me on to say that I think there are
+censorship cases in the UK which do in fact contradict what is stated in
+Article 19. From this you can then gather that the censorship in China might
+not actually be that extreme compared to what we are used to. I would then go
+further to say that if the country myself doesn’t abide by the Universal
+Declaration of Human Rights why should China be expected to?
 
-An alternate issue when discussing internet censorship in China is that when it
-is discussed people often forget the significant cultural differences between
-where we live and China. Here in England censorship is generally seen as
-limiting and supressing the freedom of the people under it. Whereas in China it
-has been suggested that citizens interpret it differently, that they believe
-that it is almost a tradition as there has been alternate types of censorship,
-not on the internet, since 1949 ( University of Adelaide Press, 2012).  This
-means that the culture there has developed around the censorship and that many
-of the people in China will therefore believe that it is a necessary core part
-of the internet and they would then therefore agree that they need it. As a
-result this could then be interpreted that they almost encourage the censorship
-as it protects them and keep them safe. This could then be debated as a reason
-for censorship as the majority of the people affected by it in some form
-condone it, which could be turned to say that it therefore does not impose on
-their freedom of opinion as they are in favour of it.
+Overall these pieces of information have shown that internet censorship does
+violate article 19 quite considerably. The actual censoring such as IP blocking
+and DNS filtering actually prohibit internet users from being able to express
+their opinions and their freedom of speech as it does interfere with this. This
+is a direct violation of the article. It also does not allow citizens to seek
+information which is shown in the Tiananmen Square Massacre example and this
+also violates the article. Even though there is a substantial amount of people
+that self-censor there is also a large number who circumvent the censorship
+attempts. This just goes to show that there is an opposition to the censorship
+from the people who are affected by it. In addition to this the fact that they
+could be punished for this just shows the desire of the people to not be
+censored. I feel the fact that circumvention is possible does not sway my
+standing as many people will not be able to do this as they won’t know how and
+so still will be subject to censorship. I also believe that many censor
+themselves as they are being manipulated by the government and people in power
+and are afraid of the consequences that aren’t. As I result I feel this
+pressure is actually interference and so also violates the article. The
+argument that the culture and precedent for the amount of control in China
+means that is hard for someone who has always lived without it is difficult to
+dissect. This is because I will never be in full understanding of what is
+actually being done to limit free speech and I would also never know if the
+censorship is what helps bind the diverse country together. However in article
+19 it does state that every person should have the right to free speech
+“regardless of frontiers” which suggests that that is irrelevant as China
+should be subject to this as is every other country and that everyone should
+have this right regardless of whether its country’s stability relies on it. I
+also feel that the argument that the internet has helped with activism is
+partially invalid as the censorship has made citizens not able to openly
+discuss things that the government has deemed sensitive and has made it hard to
+show opinions on things which does violate article 19.  The only reason I have
+decided it does not fully violate the article is because of how in recent years
+the restrictions have become less and there are certain topics and phrases that
+are now allowed when previously they weren’t. This shows some leniency and
+suggests that there may be more change to come to help give people even more
+freedom online.
+
+
+
+Bibliography
+University of Adelaide Press. (2012). JSTOR. Retrieved 03 23, 2018, from Chinese Anger at the Label of Censorship: https://www.jstor.org/stable/10.20851/j.ctt1sq5x62.9?Search=yes&resultItemClick=true&searchText=chinese&searchText=censorship&searchUri=%2Faction%2FdoBasicSearch%3Ffc%3Doff%26amp%3BQuery%3Dchinese%2Bcensorship%26amp%3Bwc%3Don%26amp%3Bgroup%3Dnone%26amp%3B
+Blocked. (2018, May 17). Why are websites being blocked in the UK? Retrieved May 17, 2018, from Blocked: https://www.blocked.org.uk
+Bristow, M. (2010, 06 08). China defends internet censorship. Retrieved 02 11, 2018, from BBC: http://news.bbc.co.uk/1/hi/8727647.stm
+Cox, J. (2014, July 3). The UK's Internet Filters Block Almost 1 in 5 Websites. Retrieved May 17, 2018, from Motherboard: https://motherboard.vice.com/en_us/article/3dka5n/the-uks-internet-filters-block-1-in-5-websites
+Farrell, N. (2013, December 17). Cameron started his purge on the net today. Retrieved May 17, 2018, from TechEye: http://www.techeye.net/business/cameron-started-his-purge-on-the-net-today
+Gan, N. (2017, September 4). Man jailed for selling VPNs to evade China’s ‘Great Firewall’. Retrieved february 19, 2018, from South China Morning Post: http://www.scmp.com/news/china/policies-politics/article/2109618/man-jailed-selling-vpns-evade-chinas-great-firewall
+Henochowicz, A. (2013, 6 3). Sensitive Words: 24th Anniversary of Tiananmen. Retrieved 2 1, 2018, from China Digital Times: https://chinadigitaltimes.net/2013/06/sensitive-words-24th-anniversary-of-tiananmen/
+Hoffman, C. (2016, September 22). How the “Great Firewall of China” Works to Censor China’s Internet. Retrieved February 2, 2018, from How-To Geek: https://www.howtogeek.com/162092/htg-explains-how-the-great-firewall-of-china-works/
+Hua, X. (2006, 04 12). Major news websites back Internet self-censorship. Retrieved 11 02, 2017, from China Daily: http://www.chinadaily.com.cn/china/2006-04/12/content_565793.htm
+Li, Q. (2017, 08 13). Another reason China censors the Internet. Retrieved 03 10, 2018, from The Washington Post: https://www.washingtonpost.com/opinions/another-reason-china-censors-the-internet/2017/08/13/45b9936e-7ef6-11e7-b2b1-aeba62854dfa_story.html?utm_term=.31bc0747889a
+Morgan, D. (2010, 1 25). Bill Gates says Internet needs to thrive in China. Retrieved 3 18, 2018, from Reuters: https://www.reuters.com/article/us-china-usa-gates/bill-gates-says-internet-needs-to-thrive-in-china-idUSTRE60O33O20100125?feedType=RSS&feedName=internetNews&rpc=69
+Punyakumpol, P. (2011, 06 01). The Great Firewall of China: Background. Retrieved 11 28, 2017, from Torfox: https://cs.stanford.edu/people/eroberts/cs181/projects/2010-11/FreedomOfInformationChina/the-great-firewall-of-china-background/index.html
+Quick Guide To Internet Censorship. (2017, October 16). Retrieved from Laws: https://court.laws.com/internet-censorship
+RAND Corporation. (2013). The Internet in China: Threatened Tool of Expression and Mobilization. Retrieved 12 8, 2017, from JSTOR: http://www.jstor.org/stable/10.7249/j.ctt4cgd90.12
+Spencer, D. (2018, February 16). Is internet censorship thriving under the radar in the UK? And can a VPN help? Retrieved May 2018, 2018, from VPNcompare: https://www.vpncompare.co.uk/internet-censorship-thriving-radar-uk-vpn-help/
+The Great Firewall of China: Background. (2017). Retrieved 2017, from Torfox.
+UltraSurf. (2018). Homepage. Retrieved 02 23, 2018, from UltraSurf: https://ultrasurf.us
+What is Internet Censorship? (2017, October 16). Retrieved from IP Location: https://www.iplocation.net/internet-censorship
+Yang, G. (n.d.). The Power Of The Internet In China. (D. C. Kang, Ed.) New York City, New York, United states of America: Columbia University Press New York.
+Ying, J. (2017, 12 8). Chinese Anger with Western Media’s Assumptions of Political Change. Retrieved from JSTOR: http://www.jstor.org/stable/10.20851/j.ctt1sq5x62.10
